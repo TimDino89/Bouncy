@@ -1,0 +1,90 @@
+// Team
+
+.team {
+  padding: 54px 0 160px;
+
+  // Slider
+  &__slide {
+    display: flex !important;
+    justify-content: space-between;
+  }
+
+  &__slider {
+      padding: 0 169px 10px 170px;
+
+    .slick-dots button::before {
+      content: '';
+      width: 8px;
+      height: 8px;
+      opacity: 1;
+      border: 1px solid $color-green;
+      border-radius: 50%;
+    }
+
+    .slick-dots li.slick-active button:before {
+      background: $color-green;
+    }
+
+    .slick-dots {
+      bottom: -70px;
+      left: 5px;
+    }
+
+    .slick-dots li {
+      margin: 0;
+    }
+  }
+  // End Slider
+
+  &__img {
+    width: 30%;
+  }
+
+  &__text {
+    padding: 0 40px;
+    margin: 0;
+    width: 50%;
+    max-height: 350px;
+    text-align: right;
+    overflow-y: scroll;
+    overflow-x: hidden;
+
+    &::-webkit-scrollbar {
+      width: 5px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background: $color-green;
+    }
+
+    &::-webkit-scrollbar-track {
+      background: transparent;
+    } 
+  }
+
+  &__name {
+    margin: 23px 0 4px;
+    color: $color-gray--dark;
+    font-weight: 400;
+    font-size: 20px;
+    letter-spacing: 2px;
+  }
+
+  &__position {
+    display: block;
+    margin-bottom: 23px;
+    font-family: $font-sourceSans;
+    font-weight: 300;
+    letter-spacing: 1px;
+    color: $color-gray;
+    text-transform: uppercase;
+    font-style: italic;
+  }
+
+  &__description {
+    text-align: right;
+    font-size: 14px;
+    line-height: 25px;
+    color: $color-gray;
+  }
+}

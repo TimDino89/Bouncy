@@ -1,0 +1,45 @@
+// Portfolio
+
+.portfolio {
+  padding: 63px 123px 96px;
+  background: $color-white--dark;
+
+  &__btns {
+   text-align: center;
+   padding: 14px 0 53px;
+  }
+
+  &__btn {
+    text-align: center;
+    margin: 0 10px 0 0;
+    position: relative;
+    font-size: 16px;
+    border: none;
+    background: transparent;
+    outline: none;
+    cursor: pointer;
+    
+    &::after {
+      display: block;
+    content: '';
+    margin: 0 auto;
+    margin-top: 10px;
+    width: 40px;
+    height: 3px;
+    background: transparent;
+    }
+  }
+
+  &__container {
+    width: 1120px;
+    font-size: 0;
+  }
+
+  &__item {
+    padding: 5px;
+  }
+}
+
+.is-active::after {
+  background: $color-green;
+}

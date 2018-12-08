@@ -1,0 +1,24 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  max-width: 1366px;
+  font-family: $font-openSans;
+  font-size: 16px;
+  overflow-x: hidden;
+}
+
+img {
+  display: block;
+}
+
+.hero__wrapper {
+  padding: 30px 97px;
+  background-image: url('../img/header-bg.jpg');
+  background-size: cover;
+}

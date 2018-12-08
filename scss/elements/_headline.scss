@@ -1,0 +1,26 @@
+// Headline
+
+.headline {
+  padding-bottom: 59px;
+  text-align: center;
+
+  &__title {
+    margin-bottom: 30px;
+    font-family: $font-sourceSans;
+    font-size: 20px;
+    font-weight: 300;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+  }
+
+  &__subtitle {
+    display: block;
+    width: 480px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 14px;
+    line-height: 25px;
+    letter-spacing: 1px;
+    color: $color-gray;
+  }
+}

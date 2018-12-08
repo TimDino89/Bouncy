@@ -1,0 +1,31 @@
+// Talks
+
+.talks {
+  padding: 52px 0 58px;
+  text-align: center;
+  background-image: url('../../img/contacts-bg.jpg');
+  color: $color-white;
+
+  &__title {
+    margin-bottom: 28px;
+    font-size: 20px;
+    letter-spacing: 1px;
+  }
+
+  &__btn {
+    padding: 8px 29px;
+    border: 1px solid $color-white;
+    border-radius: 30px;
+    background: transparent;
+    font-size: 16px;
+    color: $color-white;
+    cursor: pointer;
+    transition: .3s;
+    text-decoration: none;
+
+    &:hover {
+      color: $color-black;
+      background: $color-white;
+    }
+  }
+}

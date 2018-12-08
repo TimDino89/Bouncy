@@ -1,0 +1,49 @@
+// Footer
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__logo {
+    margin-bottom: 20px;
+  }
+
+  &__copyright {
+    margin-bottom: 20px;
+    font-size: 14px;
+    letter-spacing: 1px;
+    color: $color-gray;
+  }
+
+  &__socials {
+    padding: 0;
+    list-style: none;
+    text-align: center;
+  }
+
+  &__item {
+    display: inline-block;
+    margin: 0 3px;
+  }
+
+  &__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25px;
+    height: 25px;
+    border: 1px solid transparent;
+    background: $color-blue;
+    border-radius: 50%;
+
+    &:hover {
+      opacity: .8;
+    }
+  }
+
+  &__icon {
+    width: 13px;
+    height: 14px;
+  }
+}

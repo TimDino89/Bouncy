@@ -1,0 +1,70 @@
+// Testimonials
+
+.testim {
+  padding: 53px 0 100px;
+  background: $color-white--dark;
+
+  // Slider
+  &__slide {
+    margin-top: 2px;
+    display: flex !important;
+    justify-content: space-between;
+  }
+
+  &__slider {
+    width: 1170px;
+    margin: 0 auto;
+    padding: 47px 97px 116px;
+    background: $color-white;
+
+    .slick-dots button::before {
+      content: '';
+      width: 8px;
+      height: 8px;
+      opacity: 1;
+      border: 1px solid $color-green;
+      border-radius: 50%;
+    }
+
+    .slick-dots li.slick-active button:before {
+      background: $color-green;
+    }
+
+    .slick-dots {
+      bottom: 50px;
+      left: 5px;
+    }
+
+    .slick-dots li {
+      margin: 0;
+    }
+  }
+  // End Slider
+
+  &__text {
+    padding: 0 10px 0 69px;
+  }
+
+  &__description {
+    margin: 0 0 20px;
+    color: $color-gray;
+    line-height: 28px;
+    letter-spacing: 1px;
+  }
+
+  &__name {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: $color-green;
+  }
+
+  &__position {
+    font-size: 14px;
+    text-transform: uppercase;
+    color: $color-gray--dark;
+    letter-spacing: 1px;
+  }
+
+}
